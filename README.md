@@ -2,7 +2,7 @@
 
 A starter [Laravel](https://github.com/laravel/laravel) app ready to go with asset management provided by [Gulp.js](https://github.com/gulpjs/gulp), Twitter [Bower](https://github.com/bower/bower) using [Bootstrap 3](https://github.com/twbs/bootstrap) and [Font Awesome 4](https://github.com/FortAwesome/Font-Awesome) with preconfigured [Laravel Environments](http://laravel.com/docs/configuration#environment-configuration).
 
->>__Neat__: Pulls in Bootstrap, JQuery, Font Awesome directly from `bower_components` so you will always have the direct source when building from Gulp. At anytime run `bower update` then `gulp` and your compiled `css` and `js` will be refreshed with the latest versions directly `src` directories of each project. See the Gulp `js:vendor` and `less:build` tasks for more information.
+>__Neat__: Pulls in Bootstrap, JQuery, Font Awesome directly from `bower_components` so you will always have the direct source when building from Gulp. At anytime run `bower update` then `gulp` and your compiled `css` and `js` will be refreshed with the latest versions directly `src` directories of each project. See the Gulp `js:vendor` and `less:build` tasks for more information.
 
 ## Getting Started
 
