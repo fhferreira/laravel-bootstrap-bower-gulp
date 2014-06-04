@@ -34,7 +34,7 @@ return [
   'db.app.timezone' => '+00:00', // +00:00 UTC. Don't change
 
   // app/config/mail.php
-  'mail.pretend' => true
+  'mail.pretend' => true,
 
   /* APPLICATION ======================================================= */
 

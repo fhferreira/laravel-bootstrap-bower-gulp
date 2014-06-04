@@ -4,11 +4,21 @@ A starter [Laravel](https://github.com/laravel/laravel) app ready to go with ass
 
 ## Get Started
 
-### Command Line
+### Clone Project
 
   1. Clone this repo in your sites directory:
       * `git clone https://github.com/jhauraw/laravel-bootstrap-bower-gulp.git`
   2. `cd` into project directory
+
+### Create `.env.*.php` Files
+
+  1. Copy `env.template.php` and Rename to `.env.php` (Note: preceeding "dot")
+  2. Edit file and change
+      * `app.env` from `development` to `production`
+  3. Copy `env.template.php` and Rename to `.env.development.php` (Note: preceeding "dot")
+  4. __Later__: for each "environment" you can set the other values as needed.
+
+### Init Project
   3. `composer install`
   4. `npm install`
   5. `bower update`
@@ -33,9 +43,9 @@ A starter [Laravel](https://github.com/laravel/laravel) app ready to go with ass
 
 By default, you will be in `production` environment. You probably want to be in `development` when working locally. To switch:
 
-  1. `php artisan key:generate`. Copy key to `app.key` in `.env.development.php`
+  1. `php artisan key:generate`. Copy key to `app.key` in `.env.php` and `.env.development.php`
   2. Set an ENV variable for `APP_ENV` to `development`. You can do this in `php-fpm.conf`, `httpd.conf`, or your local shell ENV in `.bash_profile`.
-  3. Edit settings in `.env.development.php` or which ever .env.*.php you want to use
+  3. Edit settings in `.env.development.php` or which ever `.env.*.php` you want to use
 
 __NOTE__: For `production`, be sure to change the "Acme" namespace in `app/Acme`, `app/config/auth.php`, and `composer.json`, to your own, then run `composer dumpautoload -o`
 
