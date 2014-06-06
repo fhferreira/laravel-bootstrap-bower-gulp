@@ -51,6 +51,14 @@ By default, you will be in `production` environment. You probably want to be in 
 
 __NOTE__: For `production`, be sure to change the "Acme" namespace in `app/Acme`, `app/config/auth.php`, and `composer.json`, to your own, then run `composer dumpautoload -o`
 
+### Optional - Site Settings CONSTANTs
+
+While sensitive settings should go in the `.env.*.php` files, site wide settings such as __admin email address__, __phone number__, and other global data typically go in a CONSTANTs file or Site Settings file. If you would like to use a similar setup, add as many entries as you need to the file `app/config/setting.php`.
+
+In your `views` or any other Laravel file, your data will be available via `Config::get('setting.key');`.
+
+See the `app/views/layouts/master.blade.php` file for implementaton example.
+
 ## TODO
 
   * Lessify css in `app-styles.less`
@@ -124,7 +132,7 @@ __NOTE__: For `production`, be sure to change the "Acme" namespace in `app/Acme`
 
     * Created
 
-        * File `footer.php`
+        * Files `header.php`, `footer.php`, and `nav.php`
 
 ***
 

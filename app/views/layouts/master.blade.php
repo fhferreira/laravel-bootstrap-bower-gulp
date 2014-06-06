@@ -31,7 +31,10 @@
           <a title="" href=""><img class="image-responsive" src="//placehold.it/250x85" alt=""></a>
         </div>
         <div class="header-col header-aux col-sm-6">
-          User Area
+          <ul class="list-inline">
+            <li><i class="fa fa-fw fa-user"></i> @lang('header.user.area')</li>
+            <li><i class="fa fa-fw fa-phone"></i> {{ Config::get('setting.company.phone') }}</li>
+          </ul>
         </div>
       </div>
 
@@ -52,17 +55,17 @@
 
       <div class="collapse navbar-collapse" id="nav-main">
         <ul class="nav navbar-nav">
-          <li><a href="#"><i class="fa fa-fw fa-home"></i> Home</a></li>
+          <li><a href="#"><i class="fa fa-fw fa-home"></i> @lang('nav.main.home')</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-info-circle"></i> Information <b class="caret"></b></a>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-info-circle"></i> @lang('nav.main.information') <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#">@lang('nav.main.information.sub.about')</a></li>
+              <li><a href="#">@lang('nav.main.information.sub.contact')</a></li>
             </ul>
           </li>
-          <li><a href="#"><i class="fa fa-fw fa-search"></i> Search</a></li>
+          <li><a href="#"><i class="fa fa-fw fa-search"></i> @lang('nav.main.search')</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div><!-- .container -->
@@ -101,9 +104,9 @@
       <!-- footer.primary nav -->
 
       <p class="footer-meta">
-          &copy; {{ date('Y') }} <strong>Company Name</strong>
+          &copy; {{ date('Y') }} <strong>{{ Config::get('setting.company.name') }}</strong>
           <br>
-          Company Description
+          {{ Config::get('setting.company.description') }}
       </p>
 
       <hr class="soften">

@@ -17,6 +17,12 @@ return [
   |
   */
 
+  'company' => [
+    'name' => 'Company Name',
+    'description' => 'Company Description',
+    'phone' => '+1 800-123-4567'
+  ],
+
   'session' => [
     'cookie' => 'el_session'
     ]
