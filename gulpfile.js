@@ -27,7 +27,6 @@ var clean = require('gulp-clean');
 
 // DEV
 var notify = require('gulp-notify');
-var watch = require('gulp-watch');
 
 //////////////////////////////////////////////////
 // PATHS
@@ -141,6 +140,18 @@ gulp.task('fonts:pub', function () {
 });
 
 //////////////////////////////////////////////////
+// WATCH Tasks
+//////////////////////////////////////////////////
+
+gulp.task('js:watch', function () {
+  gulp.watch(paths.app.assets + '/js/**/*.js', ['js:pub']);
+});
+
+gulp.task('less:watch', function () {
+  gulp.watch(paths.app.assets + '/less/**/*.less', ['css:pub']);
+});
+
+//////////////////////////////////////////////////
 // CLEAN Tasks
 //////////////////////////////////////////////////
 
@@ -168,4 +179,4 @@ gulp.task('build:dev', []);
 gulp.task('build:prod', []);
 
 // gulp clean:pre && gulp TASK && gulp clean:post
-gulp.task('default', ['js:pub', 'js:lib', 'css:pub', 'fonts:pub']);
+gulp.task('default', ['js:pub', 'js:lib', 'css:pub', 'fonts:pub', 'js:watch', 'less:watch']);
