@@ -61,8 +61,8 @@
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-info-circle"></i> @lang('nav.main.information') <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="#">@lang('nav.main.information.sub.about')</a></li>
-              <li><a href="#">@lang('nav.main.information.sub.contact')</a></li>
+              <li><a href="#">@lang('nav.main.information_sub.about')</a></li>
+              <li><a href="#">@lang('nav.main.information_sub.contact')</a></li>
             </ul>
           </li>
           <li><a href="#"><i class="fa fa-fw fa-search"></i> @lang('nav.main.search')</a></li>
