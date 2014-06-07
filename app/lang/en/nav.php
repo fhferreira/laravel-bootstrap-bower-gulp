@@ -5,7 +5,7 @@ return [
   'main' => [
     'home' => 'Home',
     'information' => 'Information',
-    'information.sub' => [
+    'information_sub' => [
       'about' => 'About',
       'contact' => 'Contact'
     ],

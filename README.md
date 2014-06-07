@@ -62,7 +62,6 @@ See the `app/views/layouts/master.blade.php` file for implementaton example.
 ## TODO
 
   * Lessify css in `app-styles.less`
-  * Gulp `watch` task
 
 ## Gulp Commands Reference
 
